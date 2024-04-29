@@ -1,44 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUSION CAFE</title>
 </head>
 <style>
-/* *{
+    /* *{
     margin: 0px;
     padding: 0px;
 } */
 
-body{}
-.navbar{
 
-    display:inline-block;
-    border: 2px solid red;
-    width: 20vw;
-}
+    .navbar {
 
+        display: flex;
+        /* border: 2px solid red; */
+        width: 100vw;
+        /* background-color: rgb(235, 220, 202); */
+    }
+
+    .navbar p {
+        font-size: 20px;
+        font-family: cursive;
+        letter-spacing: 5px;
+    }
+
+    .navbar ul {
+        display: flex;
+        gap: 80px;
+        margin-left: 650px;
+        font-family: cursive;
+    }
+
+    .navbar ul li {
+        /* border: 2px solid black; */
+        overflow: hidden;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+   ul li:hover{
+        background-color: rgb(240, 236, 236);
+    }
+
+    .mainimg {
+        position: relative;
+
+    }
+
+    .img1 {
+        height: 800px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .imgtittle {
+        position: absolute;
+        bottom: 0px;
+        left: 110px;
+        color: antiquewhite;
+    }
+
+    .About {
+        margin-left: 20px;
+
+    }
+
+    .box2 {
+        height: 500px;
+        width: 600px;
+        object-fit: cover;
+        display: block;
+        border-radius: 30px;
+        position: relative;
+
+
+    }
+
+    .discription {
+        /* border: 2px solid red; */
+        height: 500px;
+        width: 500px;
+
+    }
+
+    .discription {
+        position: absolute;
+        margin-left: 680px;
+        top: 920px;
+
+    }
+
+    p {
+        font-family: cursive;
+        font-size: medium;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: cursive;
+        font-style: italic;
+        letter-spacing: 5px;
+
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 10px;
+    }
+
+    .menuimg {
+        height: 500px;
+        width: 500px;
+        object-fit: cover;
+        position: relative;
+        margin-left: 750px;
+        margin-top: 50px;
+        border-radius: 40px;
+    }
+
+    .menu{
+        /* font-size: 10px; */
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 250%;
+        font-size: 19px;
+        font-family: cursive;
+        letter-spacing: 1px;
+
+    }
+    h3{
+        text-align: center;
+    }
+   
 </style>
+
 <body>
     <div class="main">
         <div class="navbar">
-            <ul>
-                <li>FUSION CAFE</li>
-            </ul>
+
+            <!-- <p><img src="logo.jpg" alt="" height="100px" width="100px"><p> -->
+            <p>FUSIONRESTRO</p>
+
             <ul>
                 <li>About</li>
                 <li>Menu</li>
-                <li>About</li>
+                <li>Contact</li>
             </ul>
         </div>
-                <div class="mainimg">
-                    <img src="imgwhite2.avif" alt="">
-                    </div>
-                    <div class="inline">
-                    <h5>La nourriture</h5>
-                </div>
+        <div class="mainimg">
+            <img class="img1" src="/imgnew.avif" alt="">
+            <h1 class="imgtittle">La nourriture</h1>
         </div>
-    
+
+        <br>
+
+        </br>
+
+        <div class="About">
+            <img class="box2" src="/imgwhite.avif" alt="">
+            <div class="discription">
+                <h2>About Catering</h2>
+                <br>
+                <h4>Tradition since 1889</h4>
+
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.We
+                    only use seasonal ingredients.</p>
+
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+            </div>
+
+        </div>
+
+        <div class="box3">
+
+            <img class="menuimg" src="/imgwhite3.avif" alt="">
+
+            <div class="menu">
+
+                <h3>Our Menu</h3>
+                <br>
+
+                <dl> 
+                    <dt>Bread Basket</dt>
+                    
+                    <dd>Assortment of fresh baked fruit breads and muffins 5.50</dd>
+                    <br>
+
+
+                    <dt>Honey Almond Granola with Fruits</dt>
+                    <dd>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</dd>
+                    <br>
+
+                    <dt>Belgian Waffle</dt>
+                    <dd>Vanilla flavored batter with malted flour 7.50</dd>
+
+                    <br>
+
+                    <dt>Scrambled eggs</dt>
+                    <dd>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</dd>
+
+                    <br>
+
+                    <dt>Blueberry Pancakes</dt>
+                    <dd>With syrup, butter and lots of berries 8.50</dd>
+                </dl>
+                
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
 </body>
+
 </html>
